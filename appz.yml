@@ -1,7 +1,7 @@
 app:
   name: Tomcat Loadgen
   code: TCLG
-  notify: pchandran@ecloudcontrol.com
+  notify: apaul@ecloudcontrol.com
 
 build:
   version: 0.3
@@ -11,10 +11,10 @@ build:
   image_template: tomcat9
 
 deploy:
-  context: pradeepchandran0/DEV
+  context: AncyPaul26/DEV
   replicas: 1
   port: 8080
-  strategy : rolling
+  strategy: rolling
   ready_seconds : 45
 
 properties:
@@ -24,7 +24,7 @@ properties:
   delay: 60
   next: 60
   download: false
-  random : false
-  nano : 401
+  random: false
+  nano: 401
 
 
