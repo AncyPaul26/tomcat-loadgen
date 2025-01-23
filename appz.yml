@@ -5,20 +5,20 @@ app:
 
 build:
   version: 0.3
-  env: DEV
+  env: PROD
   build_file: pom.xml
   output_files: output/*.war
   image_template: tomcat9
 
 deploy:
-  context: AncyPaul26/DEV
+  context: cloudorbit/PROD
   replicas: 4
   port: 8080
   strategy: rolling
   ready_seconds : 45
 
 properties:
-  title: Demo for Lendo
+  title: Demo 
   head_color : Blue
   threads: 0
   delay: 60
