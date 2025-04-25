@@ -19,12 +19,12 @@ deploy:
 
 properties:
   title: Demo 
-  head_color : Blue
+  head_color : Green
   threads: 0
   delay: 60
   next: 60
   download: false
   random: false
-  nano: 111
+  nano: 222
 
 
